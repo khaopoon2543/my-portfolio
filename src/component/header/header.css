@@ -1,0 +1,114 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    height: 80%;
+    position: relative;
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--color-pink);
+    color: var(--color-black);
+    border-radius: 40px;
+    padding: 0px 20px;
+}
+
+.name {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* -------------------- CIRCLE -------------------- */
+.circle {
+    position: absolute;
+    background-image: radial-gradient(circle,
+    var(--color-white), var(--color-white) 66%, transparent 66%);
+}
+.circle.right {
+    right: 0rem;
+    top: 20rem;
+    height: 15rem;
+    width: 15rem;
+}
+.circle.left {
+    left: -5rem;
+    height: 30rem;
+    width: 30rem;
+    top: -8rem;
+}
+
+/* -------------------- SOCIALS -------------------- */
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    font-size: 20px;
+}
+
+.header_socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* -------------------- EMAIL -------------------- */
+.header_email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* -------------------- ME -------------------- */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.me {
+    background: linear-gradient(var(--color-pink), transparent);
+    width: 22rem;
+    height: 25rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+
+/* -------------------- SHAPE -------------------- */
+.shape-waves, .shape-circle {
+    position: absolute;
+    opacity: 0.1;
+}
+
+.shape-circle {
+    width: 150px;
+    bottom: -2rem;
+    right: 0rem;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.shape-waves {
+    width: 100px;
+    left: 2rem;
+    top: 20rem;
+}

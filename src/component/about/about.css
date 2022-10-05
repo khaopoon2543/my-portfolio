@@ -1,0 +1,104 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 5%;
+    align-items: center;
+}
+
+.about_container.top {
+    margin-top: 5rem;
+}
+.about_container.under {
+    margin-top: 2rem;
+}
+
+.about_me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-white),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+}
+
+.about_me_image {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+    border-radius: 50%;
+    width: 95%;
+}
+
+.about_content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about_content p{
+    font-size: 14px;
+    text-align: left;
+}
+
+.about_script {
+    padding: 30px 50px;
+    background-color: var(--color-white);
+    border-radius: 25px;
+    box-shadow: rgba(199, 161, 181, 0.2) 0px 7px 29px 0px;
+}
+
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about_card {
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.about_card_header {
+    color: var(--color-black);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#about_card_icon {
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 12px;
+    font-size: 36px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media  screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about_me {
+        width: 60%;
+        margin: 2rem auto 4rem;
+    }
+    .about_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+@media  screen and (max-width: 600px) {
+    .about_me {
+        width: 50%;
+    }
+}
+  
