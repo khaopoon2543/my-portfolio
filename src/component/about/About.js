@@ -19,34 +19,35 @@ function About() {
                 <div className="about_content">
                     <div className="about_script">
                         <p>
-                        I would like to develop web application for bringing the best user experience and beautiful interface.
-                        I'm currently practicing JavaScript React and interesting about ReactNative. In the future,
-                        I would like to create web or mobile applications that benefit humanity.
+                            A recent graduate in Language and Information Technology, looking for Full Stack Developer position to utilize my skills. I'm open to learning new things to improve my abilities. I would like to develop the best UX&UI for web applications. In the future, I want to develop web applications that will make studying enjoyable and accessible for everyone.
                         </p>
                     </div>
                     <br/>
                 </div>
             </div>
-            <div className="container about_container under">
-                <div className="about_content"></div>
+            <div className="container about_container-under">
                 <div className="about_content">
                     <div className="about_cards">
                         <div className="about_card">
                             <h5 className="about_card_header">
                                 <FaGraduationCap id="about_card_icon"/> Education
                             </h5>
-                            <p>Chulalongkorn University | 2018-2022</p>
-                            <p>Major : Language And Information Technology</p>
-                            <p>Minor : Japanese</p>
-                            <p>GPAX : 3.36</p>
+                            <div className="about_card_info">
+                                <p><strong>Chulalongkorn University</strong> | 2018-2022</p>
+                                <p><strong id="pink-text">Major</strong> : Language And Information Technology</p>
+                                <p><strong id="pink-text">Minor</strong> : Japanese</p>
+                                <p><strong id="pink-text">GPAX</strong> : 3.36</p>
+                            </div>
                         </div>
                         <div className="about_card">
                             <h5 className="about_card_header">
                                 <IoLanguage id="about_card_icon"/> Language
                             </h5>
-                            <p>Japanese (N3 passed)</p>
-                            <p>English</p>
-                            <p>Thai</p>
+                            <div className="about_card_info">
+                                <p>English</p>
+                                <p>Thai | Native</p>
+                                <p>Japanese | N3 passed</p>
+                            </div>
                         </div>
                     </div>
                 </div>

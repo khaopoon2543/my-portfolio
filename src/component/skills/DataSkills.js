@@ -7,7 +7,7 @@ const FrontendSkills = [
 ]
 
 const BackendSkills = [
-    "NodeJs", 
+    "NodeJs",
     "Python",
     "PHP",
     "MongoDB",

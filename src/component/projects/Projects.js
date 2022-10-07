@@ -35,7 +35,7 @@ function AllProjects(projects) {
                                 <a href={project.prototype_link} className="btn" target="_blank">Prototype</a>
                             }
                             {project.demo_link &&
-                                <a href={project.demo_link} className="btn btn-primary" target="_blank">Demo</a>
+                                <a href={project.demo_link} className="btn btn-primary" target="_blank">Live Demo</a>
                             }
                         </div>
 
