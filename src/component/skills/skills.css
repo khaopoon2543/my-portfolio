@@ -47,6 +47,17 @@
     margin-top: 30px;
 }
 
+.skills_pic img:hover {
+    margin-top: 15px;
+}
+
+.skills_pic img {
+    transition-property: margin-top;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    transition-delay: 0s; 
+}
+
 .skills_name {
     margin-bottom: .25rem;
     font-weight: 300;

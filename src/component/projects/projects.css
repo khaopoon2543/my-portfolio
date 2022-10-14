@@ -76,7 +76,7 @@
 
 
 
-@media  screen and (max-width: 1200px) {
+@media  screen and (max-width: 1400px) {
     .project_item {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -87,4 +87,46 @@
         margin: 0;
     }
 }
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.project_item-image {
+    position: relative;
+  }
   
+  /* Make the image responsive */
+  .project_item-image img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 3px solid var(--color-gray);
+    border-radius: 25px;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .project_item-image .btn {
+    padding: 10px 10px 0 10px;
+    transform: translate(-5%, -50%);
+    color: white;
+    font-size: 80px;
+  
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--color-black);
+    font-size: 30px;
+    margin-bottom: -10px;
+  }
+
+  .project_item-image:hover > .btn {
+    font-size: 40px;
+  }
+  
+  .project_item-image .btn:hover {
+    box-shadow: rgba(255, 173, 198, 0.479) 0px 7px 29px 0px;
+  }
+  
+  .project_item-image .btn.pause {
+    box-shadow: rgba(243, 197, 222, 0.404) 0px 7px 29px 0px;
+    background-color: var(--color-primary);
+  }

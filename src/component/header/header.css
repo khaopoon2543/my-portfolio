@@ -82,7 +82,7 @@ img {
     width: 100%;
 }
 .me {
-    background: linear-gradient(var(--color-pink), transparent);
+    background: linear-gradient(var(--color-pink), var(--color-bg));
     width: 22rem;
     height: 25rem;
     position: absolute;
