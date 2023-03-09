@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--color-black);
+    background-color: var(--color-transparent);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
@@ -30,5 +30,5 @@ nav a:hover {
 
 nav a.active {
     background: var(--color-pink);
-    color: var(--color-black);
+    color: var(--color-black-light);
 }

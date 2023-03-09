@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import HeaderSocials from './HeaderSocials';
 import HeaderEmail from './HeaderEmail';
-import ME from '../../assets/mikochan2.png';
+import ME from '../../assets/me2.png'; /* mikochan2.png */
 import ShapeWawes from '../../assets/shape-wawes.svg';
 import ShapeCircle from '../../assets/shape-circle.svg';
 

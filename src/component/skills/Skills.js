@@ -6,7 +6,7 @@ import { TbTools } from 'react-icons/tb';
 
 function AllSkills(skills) {
     const SKILLS = skills.map((skill) => {
-        return  <div className="skills_data">
+        return  <div className="skills_data" id={(skill == "BeautifulSoup") ? "bsp" : ""}>
                     <div className="skills_pic">
                         <img src={require(`../../assets/${skill.toLowerCase()}.svg`)} alt={skill}/>
                     </div>

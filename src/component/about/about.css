@@ -16,12 +16,13 @@
     border-radius: 50px;
     background: linear-gradient(
         45deg,
-        var(--color-bg),
         var(--color-white),
-        var(--color-bg)
+        var(--color-bg),
+        var(--color-white)
     );
     display: grid;
     place-items: center;
+    padding: 10px;
 }
 
 .about_me_image {
@@ -29,7 +30,10 @@
     overflow: hidden;
     transition: var(--transition);
     border-radius: 50%;
-    width: 95%;
+    width: 90%;
+}
+.about_me_image:hover {
+    margin-top: -30px;
 }
 
 .about_content {
@@ -90,6 +94,16 @@
     color: var(--color-primary);
 }
 
+.lang_flag {
+    display: flex;
+    align-items: left;
+    margin: 20px 0;
+}
+.lang_flag img {
+    width: 100%;
+    height: 50px;
+}
+
 /* -------------------- MEDIA QUERIES -------------------- */
 @media  screen and (max-width: 1024px) {
     .about_container {
@@ -97,14 +111,14 @@
         gap: 0;
     }
     .about_me {
-        width: 60%;
-        margin: 2rem auto 4rem;
+        width: 50%;
+        margin: 2rem auto 4rem; /* to be circle!! */
     }
 }
   
 @media  screen and (max-width: 600px) {
     .about_me {
-        width: 50%;
+        width: 60%;
     }
     .about_container-under {
         margin-top: 5rem;

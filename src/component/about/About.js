@@ -4,6 +4,10 @@ import ME from '../../assets/me.jpg';
 import { FaGraduationCap } from 'react-icons/fa';
 import { IoLanguage } from 'react-icons/io5';
 
+function LanguageFlag(country) {
+        return   <img src={require(`../../assets/${country}.svg`)} alt={country}/>       
+}
+
 function About() {
     return (
         <section id="about">
@@ -19,7 +23,12 @@ function About() {
                 <div className="about_content">
                     <div className="about_script">
                         <p>
-                            A recent graduate in Language and Information Technology, looking for Full Stack Developer position to utilize my skills. I'm open to learning new things to improve my abilities. I would like to develop the best UX&UI for web applications. In the future, I want to develop web applications that will make studying enjoyable and accessible for everyone.
+                            <span style={{fontSize:25}}> I'm </span>
+                            a recent graduate in 
+                            <span id="pink-text"> Language and Information Technology </span> 
+                            looking for a 
+                            <span id="pink-text"> Frontend or Web Developer </span>
+                            position where I can put my talents to use. I'm willing to learn new things in order to improve my skills and create web applications with the best user experience and user interface for each project.
                         </p>
                     </div>
                     <br/>
@@ -33,10 +42,11 @@ function About() {
                                 <FaGraduationCap id="about_card_icon"/> Education
                             </h5>
                             <div className="about_card_info">
-                                <p><strong>Chulalongkorn University</strong> | 2018-2022</p>
-                                <p><strong id="pink-text">Major</strong> : Language And Information Technology</p>
-                                <p><strong id="pink-text">Minor</strong> : Japanese</p>
-                                <p><strong id="pink-text">GPAX</strong> : 3.36</p>
+                                <p style={{marginBottom:10}}><strong>Chulalongkorn University</strong> | 2018-2022</p>
+                                <p><strong>Faculty of Arts</strong></p>
+                                <p><strong>Major :</strong> Language And Information Technology</p>
+                                <p><strong>Minor :</strong> Japanese</p>
+                                <p><strong>GPAX :</strong> 3.36</p>
                             </div>
                         </div>
                         <div className="about_card">
@@ -44,9 +54,13 @@ function About() {
                                 <IoLanguage id="about_card_icon"/> Language
                             </h5>
                             <div className="about_card_info">
-                                <p>English</p>
                                 <p>Thai | Native</p>
+                                <p>English</p>
                                 <p>Japanese | N3 passed</p>
+
+                                <div className="lang_flag">
+                                    {LanguageFlag("thai")} {LanguageFlag("uk")} {LanguageFlag("japan")}
+                                </div>
                             </div>
                         </div>
                     </div>

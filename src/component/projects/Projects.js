@@ -59,6 +59,9 @@ function AllProjects(projects) {
                             {project.prototype_link &&
                                 <a href={project.prototype_link} className="btn" target="_blank">Prototype</a>
                             }
+                            {project.presentation_link &&
+                                <a href={project.presentation_link} className="btn" target="_blank">Presentation</a>
+                            }
                             {project.demo_link &&
                                 <a href={project.demo_link} className="btn btn-primary" target="_blank">Live Demo</a>
                             }

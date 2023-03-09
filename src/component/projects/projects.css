@@ -37,9 +37,10 @@
 }
 
 .project_item-cta {
-    display: flex;
+    display: grid;
     gap: 1rem;
     font-size: 14px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .project_item-tools {
@@ -88,6 +89,15 @@
     }
 }
 
+@media  screen and (max-width: 600px) {
+    .projects_container {
+        size: 70%;
+    } 
+    .project_item-cta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
 
 /* Container needed to position the button. Adjust the width as needed */
 .project_item-image {

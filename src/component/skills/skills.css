@@ -33,6 +33,10 @@
     text-align: center;
 }
 
+#bsp.skills_data {
+    margin-left: 20px;
+}
+
 .skills_pic {
     width: 80px;
     height: 100px;
@@ -53,23 +57,18 @@
 
 .skills_pic img {
     transition-property: margin-top;
-    transition-duration: .2s;
+    transition-duration: .3s;
     transition-timing-function: ease;
-    transition-delay: 0s; 
 }
 
 .skills_name {
     margin-bottom: .25rem;
     font-weight: 300;
+    font-size: 16px;
 }
 
 
 /* -------------------- MEDIA QUERIES -------------------- */
-@media  screen and (max-width: 1440px) {
-    .skills_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media  screen and (max-width: 1024px) {
     .skills_container {
@@ -82,4 +81,8 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 2%;
     }
+    .skills_info {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem 2.5rem;
+    }    
 }

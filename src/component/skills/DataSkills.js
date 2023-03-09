@@ -15,9 +15,9 @@ const BackendSkills = [
 ]
 
 const ToolsDesigns = [
-    "Heroku",
-    "Netlify",
     "Wordpress",
+    "Selenium",
+    "BeautifulSoup",
     "Figma",
     "AdobeXD",
     "Photoshop"

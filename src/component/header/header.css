@@ -93,6 +93,23 @@ img {
     padding-top: 5rem;
 }
 
+/* -------------------- MEDIA QUERIES -------------------- */
+@media  screen and (max-width: 1024px) {
+    .me {
+        height: 30rem;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    header {
+        height: 120vh;
+    }
+    .header_container {
+        height: 80%;
+    }
+}
+   
+
 /* -------------------- SHAPE -------------------- */
 .shape-waves, .shape-circle {
     position: absolute;

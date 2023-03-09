@@ -21,12 +21,15 @@
   --color-orange: #F5C6AA;  
   --color-gray: #e0d4d444;  
   --color-text: #9c9c9c;  
+  --color-transparent: #42323770;
+  --color-black-light: #423237;
+  
 
   --transition: all 400ms ease;
 
   --container-width-lg: 55%;
   --container-width-md: 75%;
-  --container-width-sm: 90%;
+  --container-width-sm: 95%;
 }
 
 html {
@@ -79,11 +82,19 @@ section > h2 {
   color: var(--color-primary);
   font-weight: 700;
   font-size: 30px;
-}
 
+  background-image: url( 'assets/cloud1pinkborder.svg' );
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  margin:0 auto;
+  background-size: 100% 350px;
+  padding: 120px;
+  padding-bottom: 90px;
+}
 section > h5 {
   color: var(--color-black);
-  padding-top: 3rem;
+  padding-top: 80px;
+  margin-bottom: -120px;
 }
 
 a {

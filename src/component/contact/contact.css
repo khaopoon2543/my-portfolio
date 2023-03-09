@@ -1,9 +1,27 @@
 #contact {
-    background: var(--color-pink);
-    background: linear-gradient(0deg, var(--color-pink) 0%, var(--color-white) 100%);
+    /* background: var(--color-pink); */
+    /* background: linear-gradient(0deg, var(--color-pink) 0%, var(--color-white) 100%); */
+    
+    background: 
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 50px,
+      white 50px,
+      white 55px
+    ),
+    repeating-linear-gradient(
+      to top,
+      transparent,
+      transparent 50px,
+      white 50px,
+      white 55px
+    ),
+    linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 234, 234));
+
 }
 section#contact > h2 {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .contact_container {
@@ -30,6 +48,10 @@ section#contact > h2 {
 
 .contact_card_header .contact_card_icon {
     font-size: 36px;
+}
+
+.contact_card_icon {
+    color: var(--color-primary);
 }
 
 .contact_card_info {
