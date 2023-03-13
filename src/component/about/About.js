@@ -42,11 +42,13 @@ function About() {
                                 <FaGraduationCap id="about_card_icon"/> Education
                             </h5>
                             <div className="about_card_info">
-                                <p style={{marginBottom:10}}><strong>Chulalongkorn University</strong> | 2018-2022</p>
+                                <p style={{marginBottom:12}}><strong>Chulalongkorn University</strong> | 2018-2022</p>
                                 <p><strong>Faculty of Arts</strong></p>
-                                <p><strong>Major :</strong> Language And Information Technology</p>
-                                <p><strong>Minor :</strong> Japanese</p>
-                                <p><strong>GPAX :</strong> 3.36</p>
+                                <div className="about_card_info_detail">
+                                    <p><span id="detail-topic">Major</span> Language And Information Technology</p>
+                                    <p><span id="detail-topic">Minor</span> Japanese</p>
+                                    <p><span id="detail-topic">GPAX</span> 3.36</p>
+                                </div>
                             </div>
                         </div>
                         <div className="about_card">

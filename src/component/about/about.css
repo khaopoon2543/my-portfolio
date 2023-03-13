@@ -94,6 +94,20 @@
     color: var(--color-primary);
 }
 
+.about_card_info_detail {
+    line-height: 2;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#detail-topic {
+    color: var(--color-black);
+    background-color: var(--color-gray);
+    padding: 1px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
 .lang_flag {
     display: flex;
     align-items: left;

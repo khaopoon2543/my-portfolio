@@ -1,30 +1,37 @@
-const FrontendSkills = [
+const  ProgrammingLanguages = [
     "HTML",
     "CSS",
     "Javascript",
-    "ReactJs",
-    "Bootstrap"
-]
-
-const BackendSkills = [
-    "NodeJs",
     "Python",
     "PHP",
+    "SQL"
+]
+
+const FrameworksLibraries = [
+    "ReactJs",
+    "NodeJs" ,
+    "ExpressJs",
+    "Bootstrap",
+    "Selenium",
+    "BeautifulSoup"
+]
+
+const Databases = [
     "MongoDB",
     "MySQL"
 ]
 
 const ToolsDesigns = [
     "Wordpress",
-    "Selenium",
-    "BeautifulSoup",
     "Figma",
     "AdobeXD",
-    "Photoshop"
+    "Photoshop",
+    "PremierePro"
 ]
 
 export {
-    FrontendSkills, 
-    BackendSkills,
+    ProgrammingLanguages, 
+    FrameworksLibraries,
+    Databases,
     ToolsDesigns,
 }

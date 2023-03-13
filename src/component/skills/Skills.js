@@ -1,12 +1,20 @@
 import React from 'react'
 import './skills.css'
-import { FrontendSkills, BackendSkills, ToolsDesigns } from "./DataSkills";
-import { BiCode, BiColorFill } from 'react-icons/bi';
-import { TbTools } from 'react-icons/tb';
+import { ProgrammingLanguages, FrameworksLibraries, Databases, ToolsDesigns } from "./DataSkills";
+import { BiCode } from 'react-icons/bi';
+import { TbTools, TbDatabase } from 'react-icons/tb';
+
+function CheckProblemsLogo(skill) {
+    if (skill == "BeautifulSoup") {
+        return "problem-bsp"
+    } else if (skill == "PremierePro") {
+        return "problem-prep"
+    } return  ""
+}
 
 function AllSkills(skills) {
     const SKILLS = skills.map((skill) => {
-        return  <div className="skills_data" id={(skill == "BeautifulSoup") ? "bsp" : ""}>
+        return  <div className="skills_data"  id={CheckProblemsLogo(skill)}>
                     <div className="skills_pic">
                         <img src={require(`../../assets/${skill.toLowerCase()}.svg`)} alt={skill}/>
                     </div>
@@ -25,19 +33,28 @@ function Skills() {
             <div className="container skills_container">
                 <div className="skills">
                     <h4 className="skills_head">
-                        <BiCode/> Frontend Development
+                        <BiCode/> Programming Languages
                     </h4>
                     <div className="skills_info">
-                        {AllSkills(FrontendSkills)}
+                        {AllSkills(ProgrammingLanguages)}
                     </div>
                 </div>
 
                 <div className="skills">
                     <h4 className="skills_head">
-                        <BiCode/> Backend Development
+                        <BiCode/> Frameworks & Libraries
                     </h4>
                     <div className="skills_info">
-                        {AllSkills(BackendSkills)}
+                        {AllSkills(FrameworksLibraries)}
+                    </div>
+                </div>
+
+                <div className="skills">
+                    <h4 className="skills_head">
+                        <TbDatabase/> Databases
+                    </h4>
+                    <div className="skills_info">
+                        {AllSkills(Databases)}
                     </div>
                 </div>
 
