@@ -22,7 +22,7 @@ const DataProjects = [
         description: "My paintings and commissions information are collected on the website. Developed by ReactJs and Bootstrap.",
         github_link: "https://github.com/khaopoon2543/My-Galllery",
         demo_link: "https://kaopuny.netlify.app/",
-        tools: ["ReactJs","Bootstrap","Netlify"]
+        tools: ["ReactJs","Netlify"]
     },
     {
         name: "Language And Information Technology Website (demo)",
