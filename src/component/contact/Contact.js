@@ -15,10 +15,10 @@ function Contact() {
                     <div className="contact_card_header">
                         <FiMail className="contact_card_icon"/>
                         <h5>Email</h5>
-                        <p>khaopoon2543@gmail.com</p>
+                        <p>kaopun.yathip@gmail.com</p>
                     </div>
                     <div className="contact_card_info">
-                        <a href="mailto: khaopoon2543@gmail.com" target="_blank" rel="noreferrer">
+                        <a href="mailto: kaopun.yathip@gmail.com" target="_blank" rel="noreferrer">
                             send a message
                         </a> 
                     </div>

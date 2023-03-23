@@ -13,7 +13,7 @@ function HeaderSocials() {
             <a href="https://www.facebook.com/profile.php?id=100005184785636" target="_blank" rel="noreferrer">
                 <RiFacebookCircleLine />
             </a>
-            <a href="mailto: khaopoon2543@gmail.com" target="_blank" rel="noreferrer">
+            <a href="mailto: kaopun.yathip@gmail.com" target="_blank" rel="noreferrer">
                 <FiMail />
             </a> 
         </div>
